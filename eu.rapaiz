@@ -1,0 +1,22 @@
+opção = 0
+while opção !=4:
+	print ('''     [1] Geométrica
+	[2] Ponderada
+	[3] Harmônica
+	[4] Aritmética''')
+	opção = int(input('Qual sua opção?:'))
+x=int(input('Digite um valor inteiro e positivo:'))
+y=int(input('Digite outro valor inteiro e positivo:'))
+z=int(input('Digite mais um valor inteiro e positivo:'))
+if opção==1:
+	a = ((x*y*z)**1/2)**3
+	print (a)
+elif opção==2:
+	b = (x+2*y+3*z)/6
+	print (b)
+elif opção==3:
+	c = 1/((1/x)+(1/y)+(1/z))
+	print (c)
+elif opção==4:
+	d = (x+y+z)/3
+	print (d)
